@@ -1,0 +1,9 @@
+transformers
+datasets
+torch
+gscfs
+peft
+bitsandbytes
+sentencepiece       
+scipy
+tqdm
