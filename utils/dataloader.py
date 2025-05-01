@@ -11,21 +11,22 @@ DEFAULT_LANGUAGE: Literal[
 HF_DATASET_NAME = "code_search_net"
 
 def load_codesearchnet(
-    language: str = DEFAULT_LANGUAGE,
-    split: str = "train"
+    language: str = DEFAULT_LANGUAGE
 ) -> Dataset:
     """
     Load the CodeSearchNet split for `language`.
     
     """
 
-    ds = datasets.load_dataset(
+    dataset = datasets.load_dataset(
         HF_DATASET_NAME,
         language,
-        split=split,
         trust_remote_code=True)
+    
+    train_data = dataset["train"].select(range(10000))
+    test_data = dataset["validation"].select(range(1000))
 
-    return ds
+    return train_data, test_data
 
 
 def tokenize_dataset(

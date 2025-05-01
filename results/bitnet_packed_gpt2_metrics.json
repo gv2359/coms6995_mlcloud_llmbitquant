@@ -1,0 +1,14 @@
+{
+  "eval_loss": 9.184796333312988,
+  "perplexity": 9747.794921875,
+  "training_time_sec": 675.8530960083008,
+  "gpu_memory": {
+    "allocated_MB": 1475.1220703125,
+    "reserved_MB": 5038.0,
+    "max_allocated_MB": 4544.05615234375
+  },
+  "output_dir": "../saved_models/bitnet_packed_gpt2",
+  "total": 124439808,
+  "trainable": 124439808,
+  "percent": 100.0
+}

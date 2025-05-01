@@ -1,0 +1,14 @@
+{
+  "eval_loss": 1.9059253931045532,
+  "perplexity": 6.72562837600708,
+  "training_time_sec": 629.3092381954193,
+  "gpu_memory": {
+    "allocated_MB": 230.83203125,
+    "reserved_MB": 3814.0,
+    "max_allocated_MB": 3362.55859375
+  },
+  "output_dir": "../saved_models/qlora_gpt2",
+  "total": 82783488,
+  "trainable": 811008,
+  "percent": 0.9796736276683582
+}

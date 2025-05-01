@@ -17,9 +17,9 @@ def count_parameters(model):
     trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
     return {"total": total, "trainable": trainable, "percent": 100 * trainable / total}
 
-def save_metrics(metrics, experiment_id):
-    os.makedirs(f"{metrics['output_dir']}", exist_ok=True)
-    with open(f"{metrics['output_dir']}/{experiment_id}_metrics.json", "w") as f:
+def save_metrics(metrics,output_dir,experiment_id):
+    os.makedirs(f"{output_dir}", exist_ok=True)
+    with open(f"{output_dir}/{experiment_id}_metrics.json", "w") as f:
         json.dump(metrics, f, indent=2)
 
 def load_model(model_path, device):

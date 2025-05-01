@@ -18,10 +18,10 @@ def binarize_model(model):
     return model
 
 
-def load_model():
-    model = GPT2LMHeadModel.from_pretrained("gpt2")
+def load_model(model_name, device):
+    model = GPT2LMHeadModel.from_pretrained(model_name)
     model = binarize_model(model)
-    model = model.cuda()
-    tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+    model = model.to(device)
+    tokenizer = GPT2Tokenizer.from_pretrained(model_name)
     tokenizer.pad_token = tokenizer.eos_token
     return model, tokenizer

@@ -1,0 +1,14 @@
+{
+  "eval_loss": 1.6984469890594482,
+  "perplexity": 5.465452671051025,
+  "training_time_sec": 679.4087827205658,
+  "gpu_memory": {
+    "allocated_MB": 1463.7451171875,
+    "reserved_MB": 4776.0,
+    "max_allocated_MB": 4535.18115234375
+  },
+  "output_dir": "../saved_models/baseline_gpt2",
+  "total": 124439808,
+  "trainable": 124439808,
+  "percent": 100.0
+}
